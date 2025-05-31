@@ -1,5 +1,289 @@
+
+body {
+    background-color: #537B94;
+    font-family: "Pridi", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    color: white;
+}
+
+h3{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+p{
+  font-size: 25px;
+}
+
+
+header {
+    background-color: #0B202E;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a {
+    color: white;
+    font-family: "Pridi", serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 15px;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: #112a3a;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+.introducao {
+    margin-top: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.introducao-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    text-align: center;
+}
+
+#icon-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    border: 2px solid #0B202E;
+    margin-bottom: 20px;
+}
+
+
+.portifolio {
+    background-color: #0B202E;
+    padding: 40px 20px;
+}
+
+.portifolio-div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.descricao {
+    flex: 1;
+    min-width: 250px;
+}
+
+.portifolio-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+}
+
+.portifolio-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.portifolio-imagem img:hover {
+    transform: scale(1.05);
+}
+
+
+.Skills-class {
+    padding: 40px 20px;
+    background-color: #537B94;
+    color: white;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.skill .stars {
+    font-size: 24px;
+    color: white;
+}
+
+.skill span {
+    font-size: 24px;
+}
+
+
+.Contato {
+    background-color: #0B202E;
+    padding: 40px 20px;
+    color: white;
+}
+
+.contato-conteudos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(32, 29, 29);
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: rgba(75, 70, 70, 0.699);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.form input[type="submit"] {
+    background-color: rgba(75, 70, 70, 0.699);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgba(95, 90, 90, 0.8);
+}
+
+.mapa-container iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+.Contato img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.Contato img:hover {
+    transform: scale(1.2);
+}
+
+
+footer {
+     background-color: #07151f;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+   
+    padding: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .introducao {
+        margin-top: 120px;
+    }
+    
+    .projeto {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .descricao, .portifolio-imagem {
+        width: 100%;
+    }
+    
+    .contato-conteudos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
     header {
+        justify-content: center;
+    }
+    
+    header a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .introducao {
+        margin-top: 100px;
+    }
+    
+    #icon-perfil {
+        width: 150px;
+        height: 150px;
+    }
+    
+    h2 {
+        font-size: 36px;
+        color: white;
+    }
+    
+    h3 {
+        font-size: 28px;
+         color:white;
+    }
+    
+    .skill span, .skill .stars {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
         padding: 10px 0;
     }
     
@@ -9,260 +293,45 @@
     
     .menu-icon {
         display: block;
+        align-self: flex-end;
     }
     
     .introducao {
-        margin-top: 120px;
+        margin-top: 80px;
     }
     
-    h2 {
-        font-size: 36px;
-    }
-    
-    h3 {
-        font-size: 28px;
-    }
-    
-    .skill span, .skill .stars {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 480px) {
     #icon-perfil {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
     
     h2 {
         font-size: 28px;
+        text-align: center;
     }
     
     h3 {
         font-size: 24px;
+        text-align: center;
     }
     
     p {
         font-size: 16px;
+        text-align: center;
+    }
+    
+    .skill {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
     }
     
     .form, .mapa-container iframe {
-        min-width: 280px;
+        width: 100%;
+    }
+    
+    .contato-conteudos {
+        gap: 20px;
     }
 }
 
-
-
-
-
-
-  header{
-     background-color: #0B202E;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    
-    
-    
-    
-  }
-
-  header a{
-    color: white;
-    font-family: "Pridi", serif;
-    font-weight: 300;
-    font-style: normal;
-    padding: 15px;
-    float: right;
-    text-align: right;
-    
-    
-
-  }
-
- 
-
-  header a:hover{
-    background-color: #112a3a;
-
-  }
-
-  .menu-icon {
-    display: none;
-    color: white;
-    font-size: 30px;
-    padding: 15px;
-    cursor: pointer;
-}
-
-  body{
-    background-color: #537B94;
-    font-family: "Pridi", serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 0;
-  }
-
-  .introducao{
-    display: flex;
-    margin-top: 150px;
-    margin-left: 250px;
-    margin-right: 100px;
-
-  }
-
-  .introducao .introducao-div #icon-perfil{
-    float: left;
-    margin-right: 100px;
-    border-radius: 40%;
-    border: 2px solid #0B202E;
-    
-    
-
-    
-  }
-
-
- .portifolio {
-  background-color: #0B202E;
-}
-
-.portifolio-div {
-  padding: 20px;
-}
-
-.projeto {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-
-.descricao {
-  flex: 1;
-  min-width: 250px;
-  margin-left: 150px;
-  
-}
-
-.portifolio-imagem {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  min-width: 250px;
-}
-
-.portifolio-imagem img {
-  width: 480px;
-  height: 300px;
-  border-radius: 20px;
-  
-}
-
-h2 {
-  color: white;
-  font-size: 50px;
-  margin-left: 40px;
-  padding: 0;
-  text-align: left;
-}
-
-h3 {
-  color: white;
-  margin-left: 20px;
-  margin-top: 15px;
-  font-size: 45px;
-}
-
-p {
-  color: white;
-  margin-left: 20px;
-  font-size: 20px;
-}
-
- .skill {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
-      margin: 10px 0;
-      color: white;
-      font-family: serif;
-      font-weight: bold;
-      margin-left: 300px;
-      margin-right: 300px;
-    }
-
-    .skill .stars {
-      font-size: 50px;
-      color: white;
-    }
-    .skill span{
-
-      font-size: 50px;
-    }
-
-    .Contato{
-      background-color: #0B202E;
-      height: 600px;
-     
-
-
-    }
-
-    .contato-conteudos{
-       display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-right: 70px;
-      margin-left: 70px;
-
-    }
-
-    .form{
-      width: 200px;
-      height: 250px;
-      background-color: rgb(32, 29, 29);
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-left: 60px;
-      padding: 10px;
-      color: white;
-      padding-bottom: 20px;
-    }
-
-    .form input{
-      border: 0px;
-      border-color: black;
-      border-radius: 2px;
-    }
-
-
-  footer{
-    background-color: #0B202E;
-    margin: 0%;
-
-  }
-
-  
-.mapa-container iframe{
-    width: 400px;
-   
-    height: 300px;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-
-  footer p{
-    margin: 0%;
-    text-align: center;
-     background-color: #07151f;
-  }
-
-  
