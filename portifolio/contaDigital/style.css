@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e1e1e1;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e6f1f;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.user-icon {
+  height: 35px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.colunaEsquerda, .colunaDireita{
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+.colunaEsquerda{
+  margin-left: 50px;
+}
+
+.saldo-box {
+  grid-column: 1 / 2;
+  background: #1e6f1f;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 150px;
+  width: 500px;
+  margin-left: 100px;
+}
+
+.saldo {
+  font-size: 25px;
+  margin-left: 350px;
+  margin-top: 70px;
+}
+
+#saldo {
+  font-size: 40px;
+}
+
+.entradas-saidas {
+  grid-column: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.entrada, .saida {
+  background: white;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  height: 65px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entrada {
+  border-color: #1e6f1f;
+  font-size: 10px;
+  font-weight: bold;
+  border-left: 8px solid #1e6f1f;
+}
+
+.saida {
+  border-color: #f87c7c;
+  font-size: 10px;
+  font-weight: bold;
+  border-left: 8px solid #f87c7c;
+}
+
+.entrada-nome, .saida-nome {
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.entrada-nome {
+  color: #1e6f1f;
+}
+
+.saida-nome {
+  color: #f87c7c;
+}
+
+.valor-verde, .valor-vermelho {
+  margin-left: 350px;
+  margin-bottom: 20px;
+  font-size: 20px
+}
+
+.valor-verde, #totalEntradas {
+  color: #1e6f1f;
+}
+
+.valor-vermelho, #totalSaidas {
+  color: #f87c7c;
+}
+
+.valor {
+  font-size: 1.5em;
+}
+
+.verde {
+  color: #1e6f1f;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.vermelho {
+  color: #f87c7c;
+}
+
+.publicidade img {
+  width: 540px;
+  border-radius: 10px;
+  height: 300px;
+  margin-left: 100px;
+}
+
+.botoes {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  height: 200px;
+  margin-left: 100px;
+}
+
+.botoes button {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.botoes button img {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#btnPix, #btnPagar, #btnInvestir {
+  color: #1e6f1f;
+}
+
+.transacao-entrada {
+  background: #D9D9D9;
+  border: 2px solid #1e6f1f;
+  border-left: 8px solid #1e6f1f;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.data-transacao {
+  float: right;
+  font-size: 12px;
+  color: #444;
+}
+
+.transacoes {
+  grid-column: 2 / 4;
+  background: white;
+  border: 2px solid #1e6f1f;
+  padding: 10px;
+  border-radius: 10px;
+  height: 490px;
+  width: 520px;
+}
+
+.titulo-transacoes {
+  color: #1e6f1f;
+}
+
+#data {
+  margin-left: 150px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 12px;
+  color: #1e6f1f;
+}
+
+.valor-transacao {
+  font-weight: bold;
+  font-size: 15px;
+  color: #1e6f1f;
+  margin-left: 260px;
+}
+
+footer {
+  background: #1e6f1f;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 15px;
+  position: relative;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colunaEsquerda,
+  .colunaDireita {
+    width: 100%;
+    align-items: center;
+  }
+  
+}

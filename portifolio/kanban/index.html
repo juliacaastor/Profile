@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban </title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>Kanban </h1>
+    
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Digite a descrição da tarefa...">
+        <button id="addTaskBtn">Adicionar Tarefa</button>
+    </div>
+    
+    <div class="kanban-board">
+        <div class="column" id="open-column">
+            <div class="column-header open">Em aberto</div>
+            <div class="tasks" id="open-tasks" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="task-count" id="open-count">0 tarefas</div>
+        </div>
+        
+        <div class="column" id="bid-column">
+            <div class="column-header bid">Bid (Negociação)</div>
+            <div class="tasks" id="bid-tasks" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="task-count" id="bid-count">0 tarefas</div>
+        </div>
+        
+        <div class="column" id="progress-column">
+            <div class="column-header progress">Em andamento</div>
+            <div class="tasks" id="progress-tasks" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="task-count" id="progress-count">0 tarefas</div>
+        </div>
+        
+        <div class="column" id="delivered-column">
+            <div class="column-header delivered">Entregue</div>
+            <div class="tasks" id="delivered-tasks" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="task-count" id="delivered-count">0 tarefas</div>
+        </div>
+    </div>
+    
+   <script src="script.js"></script>
+</body>
+</html>

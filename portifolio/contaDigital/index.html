@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank SE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <img src="assets/img_logo.png" alt="Logo Bank SE" class="logo" />
+    <div class="user-info">
+      <span>Olá, Fulano</span>
+      <img src="assets/icon_user_.png" alt="Ícone do usuário" class="user-icon" />
+    </div>
+  </header>
+
+  <main class="container">
+
+   <div class="colunaEsquerda">
+     <div class="box-conta">
+    <section class="saldo-box">
+      <h3>Conta</h3>
+      <p class="saldo">R$ <span id="saldo">10,00</span></p>
+    </section>
+    </div>
+   
+    <div class="Publicidade">
+     <section class="publicidade">
+      <img src="assets/img_seguros.png" alt="Seguros para família" />
+     </section>
+    </div>
+
+    <div class="botoes-paga">
+     <section class="botoes">
+      <button id="btnPix" ><img src="assets/icon_pix_.png"/> <br> Área PIX</button>
+      <button id="btnPagar"><img src="assets/icon _dollar_.png" /> <br> Pagar</button>
+      <button id="btnInvestir"><img src="assets/icon _graph_.png" /> <br> Investir</button>
+     </section>
+   </div>
+  </div>
+
+  <div class="colunaDireita">
+  <div class="saidas-entradas">
+    <section class="entradas-saidas">
+     <div class="entrada">
+       <h4 class="entrada-nome">Entradas</h4>
+       <p class="valor-verde">R$ <span id="totalEntradas">10,00</span></p>
+     </div>
+     <div class="saida">
+       <h4 class="saida-nome">Saídas</h4>
+       <p class="valor-vermelho">R$ <span id="totalSaidas">0,00</span></p>
+     </div>
+    </section>
+   </div>
+
+  <div class="Transacoes-div">
+  <section class="transacoes">
+  <h4 class="titulo-transacoes">Últimas transações</h4>
+    <div id="listaTransacoes">
+      <div class="transacao-entrada">
+        <p class="verde">⬇ Entrada | <span class="data-transacao">01/01/2024 - 01:01:01</span></p>
+        <p class="infos"><span class="label">Tipo:</span> Transferência recebida</p>
+        <p class="infos"><span class="label">De:</span> 000.000.000-00</p>
+        <p class="infos"><span class="label">ID:</span> 20240101010101 
+          <span class="valor-transacao">Valor: R$10,00</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  </main>
+
+  <footer>
+    <p> © 2024 BankSE - Desenvolvido por: Josimar Santos</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

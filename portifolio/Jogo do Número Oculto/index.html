@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Número Oculto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo do Número Oculto</h1>
+    
+    <div id="game">
+      <p>Escolha um número entre <br> (1-100) e tente adivinhá-lo:</p>
+      <input type="number" id="guess" min="1" max="100">
+      <button id="guess-btn">Adivinhar</button>
+      <p id="message"></p>
+      <p>Tentativas restantes: <span id="attempts">5</span></p>
+      <button id="restart" style="display:none">Jogar Novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+      padding: 20px;
+  }
+  
+  .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+      color: #36a2c9;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  .input-area {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+  }
+  
+  #novaTarefa {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  
+  #btnAdicionar {
+      padding: 12px 20px;
+      background: #36a2c9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+  }
+  
+  #btnAdicionar:hover {
+      background: #277591;
+  }
+  
+  .tarefas-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .tarefa {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 5px;
+      border-left: 4px solid #36a2c9;
+  }
+  
+  .tarefa .texto {
+      flex: 1;
+  }
+  
+  .tarefa .remover {
+      background: #ff4444;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+  }
+  
+  .tarefa .remover:hover {
+      background: #cc0000;
+  }
+  
+  .contador {
+      margin-top: 20px;
+      text-align: right;
+      color: #666;
+      font-size: 14px;
+  }
